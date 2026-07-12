@@ -55,7 +55,13 @@ const weatherIcon = document.querySelector(".weather-icon");
        weatherIcon.src ="images 2/snow.png";
     }
  }
-searchBtn.addEventListener("click",() =>{
-    checkWeather(searchBox.value);
-
+searchBtn.addEventListener("click", () =>{
+checkWeather(searchBox.value);
+});
+searchBox.addEventListener("keydown", function (event) {
+   console.log(event.key);
+if (event.key === "Enter"){
+   checkWeather(searchBox.value);
+ 
+}
 });
