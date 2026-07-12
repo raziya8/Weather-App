@@ -25,6 +25,14 @@ text-align: center;
     align-items: center;
     justify-content: space-between;
 }
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size:14px;
+    color: #ffb3b3;
+    margin-top: 10px;
+    display: none;
+}
 .search input{
     border:0;
     outline:0;
